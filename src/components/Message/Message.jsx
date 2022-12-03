@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { TextMessage } from './Message.styled';
 
 export default function Message({ message }) {
-  return <p>{message}</p>;
+  return <TextMessage>{message}</TextMessage>;
 }
 
 Message.propTypes = {

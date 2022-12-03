@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FeedbackWrap, FeedbackButton } from './Feedback.styled';
 
 export default function Feedback({ options, onLeaveFeedback }) {
   return (
-    <div>
+    <FeedbackWrap>
       {options.map(option => (
-        <button
+        <FeedbackButton
           type="button"
           key={option}
           name={option}
@@ -14,9 +15,9 @@ export default function Feedback({ options, onLeaveFeedback }) {
           }}
         >
           {option}
-        </button>
+        </FeedbackButton>
       ))}
-    </div>
+    </FeedbackWrap>
   );
 }
 

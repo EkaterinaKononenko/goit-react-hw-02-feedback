@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StatList, StatItem } from './Statictic.styled';
 
 export default function Statistic({
   good,
@@ -10,13 +11,13 @@ export default function Statistic({
 }) {
   return (
     <div>
-      <ul>
-        <li> good:{good}</li>
-        <li> neutral:{neutral}</li>
-        <li> bad:{bad}</li>
-        <li> total:{total}</li>
-        <li> Positive feedback:{positivePercentage}%</li>
-      </ul>
+      <StatList>
+        <StatItem> good: {good}</StatItem>
+        <StatItem> neutral: {neutral}</StatItem>
+        <StatItem> bad: {bad}</StatItem>
+        <StatItem> total: {total}</StatItem>
+        <StatItem> Positive feedback: {positivePercentage}%</StatItem>
+      </StatList>
     </div>
   );
 }

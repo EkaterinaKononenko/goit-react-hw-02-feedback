@@ -3,6 +3,8 @@ import Feedback from './Feedback/Feedback';
 import Statistic from './Statistic/Statistic';
 import Section from './Section.jsx/Section';
 import Message from './Message/Message';
+import { AiOutlineCoffee } from 'react-icons/ai';
+import { Container, Title } from './App.styled';
 
 class App extends Component {
   state = {
@@ -33,15 +35,15 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     const total = countTotalFeedback();
     return (
-      <div>
-        <h1>Cafe "Expresso"</h1>
+      <Container>
+        <Title>Cafe "Expresso"</Title>
+        <AiOutlineCoffee color="#45322E" fontSize="5em" />
         <Section title="Please leave feedback">
           <Feedback
             options={Object.keys(this.state)}
             onLeaveFeedback={onClick}
           ></Feedback>
         </Section>
-
         <Section title="Statistics">
           {total === 0 ? (
             <Message message="There is no feedback" />
@@ -55,7 +57,7 @@ class App extends Component {
             ></Statistic>
           )}
         </Section>
-      </div>
+      </Container>
     );
   }
 }
