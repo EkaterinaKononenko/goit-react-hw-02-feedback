@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Feedback from './Feedback/Feedback';
-import Statistic from './Statistic/Statistic';
-import Section from './Section.jsx/Section';
-import Message from './Message/Message';
+import Feedback from './Feedback';
+import Statistic from './Statistic';
+import Section from './Section';
+import Message from './Message';
 import { AiOutlineCoffee } from 'react-icons/ai';
 import { Container, Title } from './App.styled';
 
