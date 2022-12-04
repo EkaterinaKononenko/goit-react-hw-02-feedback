@@ -12,4 +12,9 @@ export const FeedbackButton = styled.button`
   font-weight: ${props => props.theme.fontWeights.body};
   background: ${props => props.theme.colors.border};
   color: ${props => props.theme.colors.light};
+
+  &:hover {
+    color: ${props => props.theme.colors.border};
+    background: ${props => props.theme.colors.light};
+  }
 `;
