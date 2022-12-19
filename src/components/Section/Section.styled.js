@@ -6,7 +6,7 @@ export const TextSection = styled.h2`
   font-weight: ${props => props.theme.fontWeights.body};
 `;
 
-export const WrapSection = styled.h2`
+export const WrapSection = styled.div`
   text-content: center;
   list-style: none;
 `;
